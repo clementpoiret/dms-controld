@@ -4,7 +4,7 @@ A [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell) plugin f
 
 ## Preview
 
-![Control D DankBar widget showing protected status, profile controls, pause options, and DNS routing](docs/control-d-preview.png)
+<img src="docs/control-d-preview.png" alt="Control D DankBar widget showing protected status, profile controls, pause options, and DNS routing" width="420">
 
 ## Features
 
