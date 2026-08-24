@@ -2,6 +2,10 @@
 
 A [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell) plugin for monitoring and controlling one Control D endpoint from DankBar. A single background daemon owns credentials, polling, DNS checks, cached state, and writes, so multiple widget instances share the same confirmed state.
 
+## Preview
+
+![Control D DankBar widget showing protected status, profile controls, pause options, and DNS routing](docs/control-d-preview.png)
+
 ## Features
 
 - Shows the selected endpoint, active profile, protection state, API health, and local DNS status.
