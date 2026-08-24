@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AvengeMedia/DankMaterialShell/master/quickshell/PLUGINS/plugin-schema.json",
+  "id": "controlD",
+  "name": "Control D",
+  "description": "Control and validate a Control D endpoint from DankBar",
+  "version": "1.0.0",
+  "author": "clementpoiret",
+  "repository": "https://github.com/clementpoiret/dms-controld",
+  "license": "MIT",
+  "icon": "shield",
+  "type": "composite",
+  "capabilities": ["daemon", "dankbar-widget"],
+  "components": {
+    "daemon": "./ControlDDaemon.qml",
+    "widget": "./ControlDWidget.qml"
+  },
+  "settings": "./ControlDSettings.qml",
+  "startupCheck": "./StartupCheck.qml",
+  "dependencies": ["nslookup"],
+  "permissions": [
+    "settings_read",
+    "settings_write",
+    "network",
+    "process"
+  ],
+  "requires_dms": ">=1.5.0"
+}

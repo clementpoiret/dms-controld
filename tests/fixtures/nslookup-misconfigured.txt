@@ -1,0 +1,4 @@
+Server:         192.0.2.53
+Address:        192.0.2.53#53
+
+** server can't find verify.controld.com: NXDOMAIN

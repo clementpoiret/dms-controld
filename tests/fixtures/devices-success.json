@@ -1,0 +1,23 @@
+{
+  "body": {
+    "devices": [
+      {
+        "PK": "device_laptop",
+        "device_id": "resolver_laptop",
+        "name": "Laptop",
+        "status": 1,
+        "profile": { "PK": "profile_home", "name": "Home" },
+        "profile_id2": "profile_shared"
+      },
+      {
+        "PK": "device_router",
+        "device_id": "resolver_router",
+        "name": "Router",
+        "status": 2,
+        "profile_id": "profile_home"
+      }
+    ],
+    "activity": false
+  },
+  "success": true
+}

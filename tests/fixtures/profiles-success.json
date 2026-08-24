@@ -1,0 +1,17 @@
+{
+  "body": {
+    "profiles": [
+      {
+        "PK": "profile_home",
+        "name": "Home",
+        "disable_ttl": 0
+      },
+      {
+        "PK": "profile_shared",
+        "name": "Shared",
+        "disable_ttl": 2000000300
+      }
+    ]
+  },
+  "success": true
+}

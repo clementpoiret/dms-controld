@@ -1,0 +1,8 @@
+{
+  "body": [],
+  "success": false,
+  "error": {
+    "message": "Token is not authorized\nfor this organization",
+    "code": 403001
+  }
+}

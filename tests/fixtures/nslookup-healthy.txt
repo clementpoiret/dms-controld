@@ -1,0 +1,9 @@
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+verify.controld.com canonical name = api.controld.com.
+Name:   api.controld.com
+Address: 147.185.34.1
+Name:   api.controld.com
+Address: 2606:1a40:3::1
