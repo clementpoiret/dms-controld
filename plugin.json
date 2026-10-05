@@ -3,7 +3,7 @@
   "id": "controlD",
   "name": "Control D",
   "description": "Control and validate a Control D endpoint from DankBar. Requires nslookup, plus secret-tool (libsecret) unless the CONTROL_D_API_TOKEN environment provider is used",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "clementpoiret",
   "repository": "https://github.com/clementpoiret/dms-controld",
   "license": "MIT",
