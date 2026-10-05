@@ -405,7 +405,7 @@ PluginComponent {
                     iconName: root.snapshot.api && root.snapshot.api.state === "loading"
                               ? "progress_activity" : "refresh"
                     iconColor: Theme.surfaceVariantText
-                    buttonSize: 28
+                    buttonSize: Theme.iconSize + Theme.spacingXS
                     tooltipText: "Refresh Control D"
                     tooltipSide: "bottom"
                     enabled: root.snapshot.phase !== "loading" && !root.snapshot.busyAction
@@ -457,7 +457,7 @@ PluginComponent {
 
                                 DankIcon {
                                     name: root.stateIcon(root.snapshot.overallState)
-                                    size: 38
+                                    size: Theme.iconSizeLarge
                                     color: root.stateColor(root.snapshot.overallState)
                                     anchors.verticalCenter: parent.verticalCenter
                                 }
@@ -614,7 +614,7 @@ PluginComponent {
 
                                     DankIcon {
                                         name: "warning"
-                                        size: 18
+                                        size: Theme.iconSizeSmall
                                         color: Theme.warning
                                         anchors.verticalCenter: parent.verticalCenter
                                     }
@@ -650,7 +650,7 @@ PluginComponent {
                                         required property var modelData
                                         property var pausePreset: modelData
                                         text: pausePreset.label
-                                        buttonHeight: 32
+                                        buttonHeight: Theme.iconSize + Theme.spacingS
                                         horizontalPadding: Theme.spacingM
                                         backgroundColor: Theme.surfaceContainerHighest
                                         textColor: Theme.surfaceText
@@ -688,7 +688,7 @@ PluginComponent {
                                           && root.snapshot.capabilities.pauseMode === "unconfirmed"
                                           ? "Reactivate profile" : "Resume profile"
                                     iconName: "play_arrow"
-                                    buttonHeight: 36
+                                    buttonHeight: Theme.iconSizeLarge + Theme.spacingXS
                                     backgroundColor: Theme.surfaceContainerHighest
                                     textColor: Theme.surfaceText
                                     enabled: !root.snapshot.busyAction
@@ -755,7 +755,7 @@ PluginComponent {
 
                                 DankIcon {
                                     name: root.dnsIcon()
-                                    size: 22
+                                    size: Theme.iconSize
                                     color: root.dnsColor()
                                     anchors.verticalCenter: parent.verticalCenter
                                 }
@@ -783,7 +783,7 @@ PluginComponent {
                                 DankButton {
                                     id: dnsButton
                                     text: root.snapshot.dns && root.snapshot.dns.state === "checking" ? "Checking…" : "Check now"
-                                    buttonHeight: 32
+                                    buttonHeight: Theme.iconSize + Theme.spacingS
                                     horizontalPadding: Theme.spacingM
                                     backgroundColor: Theme.surfaceContainerHighest
                                     textColor: Theme.surfaceText

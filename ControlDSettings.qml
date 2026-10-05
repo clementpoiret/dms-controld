@@ -461,7 +461,7 @@ PluginSettings {
 
             DankIcon {
                 name: root.connectionIcon()
-                size: 32
+                size: Theme.iconSizeLarge
                 color: root.connectionColor()
                 anchors.verticalCenter: parent.verticalCenter
             }
@@ -848,7 +848,7 @@ PluginSettings {
 
                 DankIcon {
                     name: "warning"
-                    size: 20
+                    size: Theme.iconSize
                     color: Theme.warning
                     anchors.verticalCenter: parent.verticalCenter
                 }
@@ -909,6 +909,7 @@ PluginSettings {
             anchors.fill: parent
             anchors.margins: Theme.spacingM
             spacing: Theme.spacingS
+            readonly property real labelWidth: Theme.fontSizeSmall * 7
 
             Repeater {
                 model: root.diagnosticRows()
@@ -919,14 +920,14 @@ PluginSettings {
                     spacing: Theme.spacingS
 
                     StyledText {
-                        width: 84
+                        width: diagnosticsColumn.labelWidth
                         text: parent.modelData.label
                         color: Theme.surfaceVariantText
                         font.pixelSize: Theme.fontSizeSmall
                     }
 
                     StyledText {
-                        width: parent.width - 84 - Theme.spacingS
+                        width: parent.width - diagnosticsColumn.labelWidth - Theme.spacingS
                         text: parent.modelData.value
                         color: Theme.surfaceText
                         font.pixelSize: Theme.fontSizeSmall
